@@ -16,8 +16,8 @@
          <property name="dao" ref="studentDaoImpl"></property>  <!--设值注入-->
     </bean>
 
-    <!--配置我们的student对象-->
-    <bean  id="student" class="com.xdf.bean.Student">
+    <!--配置我们的student对象   lazy-init="true"  按需加载-->
+    <bean  id="student" class="com.xdf.bean.Student" lazy-init="true">
         <property name="age" value="20"/>
         <property name="name" value="小黑"/>
     </bean>
