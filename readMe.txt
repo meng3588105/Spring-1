@@ -23,10 +23,10 @@ Spring （容器）    概述：
 
          DI（Dependency  Injection）依赖注入
             之前service层的代码
-            StudentDao  dao=new StudentDaoImpl();
+            com.xdf.dao.StudentDao  dao=new StudentDaoImpl();
             现在
-             StudentDao  dao=null;
-             public  void  setDao(StudentDao  stuDao){
+             com.xdf.dao.StudentDao  dao=null;
+             public  void  setDao(com.xdf.dao.StudentDao  stuDao){
              this.dao=stuDao;
              }
              我们只需要在spring容器中配置StudentDao,
