@@ -61,4 +61,22 @@ public class StudentTest {
         System.out.println(student);
 
     }
+
+
+    /**
+     * 验证单例模式
+     *01.默认是单例
+     * 02.之后再xml文件中的student2  增加属性scope="prototype"
+     * 03.再次验证  两个对象肯定不一致
+     */
+    @Test
+    public   void  studentTest5(){
+        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+        System.out.println("*******************************************");
+        Student student = (Student) context.getBean("student2");
+        System.out.println(student);
+        Student  student2 = (Student) context.getBean("student2");  //再次获取
+        System.out.println(student==student2);
+
+    }
 }

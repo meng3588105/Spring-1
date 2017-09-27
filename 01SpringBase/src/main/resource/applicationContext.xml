@@ -22,5 +22,13 @@
         <property name="name" value="小黑"/>
     </bean>
 
+    <!-- 在spring的核心配置文件中  所有的bean默认都是单例模式
+       scope="singleton"  默认
+       scope="prototype"  原型
+       -->
+    <bean  id="student2" class="com.xdf.bean.Student" scope="prototype">
+        <property name="age" value="40"/>
+        <property name="name" value="小黑2"/>
+    </bean>
 
 </beans>
