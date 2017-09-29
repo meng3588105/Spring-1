@@ -1,4 +1,4 @@
-package com.xdf.bean;
+package com.xdf.dao.impl;
 
 /**
  * student实体类

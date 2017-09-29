@@ -1,7 +1,6 @@
 package com.xdf;
 
-import com.xdf.bean.Student;
-import com.xdf.dao.StudentDao;
+import com.xdf.dao.impl.Student;
 import com.xdf.service.StudentService;
 import com.xdf.service.impl.StudentServiceImpl;
 import org.junit.Test;

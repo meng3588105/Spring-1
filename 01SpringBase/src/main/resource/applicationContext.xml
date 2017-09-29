@@ -17,7 +17,7 @@
     </bean>
 
     <!--配置我们的student对象   lazy-init="true"  按需加载-->
-    <bean  id="student" class="com.xdf.bean.Student" lazy-init="true">
+    <bean id="student" class="com.xdf.dao.impl.Student" lazy-init="true">
         <property name="age" value="20"/>
         <property name="name" value="小黑"/>
     </bean>
@@ -26,7 +26,7 @@
        scope="singleton"  默认
        scope="prototype"  原型
        -->
-    <bean  id="student2" class="com.xdf.bean.Student" scope="prototype">
+    <bean id="student2" class="com.xdf.dao.impl.Student" scope="prototype">
         <property name="age" value="40"/>
         <property name="name" value="小黑2"/>
     </bean>
