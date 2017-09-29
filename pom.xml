@@ -9,6 +9,7 @@
     <module>01SpringBase</module>
       <module>02SpringCreateObject</module>
       <module>03SpringProperties</module>
+      <module>04SpringAutoWired</module>
   </modules>
   <packaging>pom</packaging>
 
