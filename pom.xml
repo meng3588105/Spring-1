@@ -8,6 +8,7 @@
   <modules>
     <module>01SpringBase</module>
       <module>02SpringCreateObject</module>
+      <module>03SpringProperties</module>
   </modules>
   <packaging>pom</packaging>
 
