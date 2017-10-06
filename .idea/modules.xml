@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/02SpringCreateObject/02SpringCreateObject.iml" filepath="$PROJECT_DIR$/02SpringCreateObject/02SpringCreateObject.iml" />
       <module fileurl="file://$PROJECT_DIR$/03SpringProperties/03SpringProperties.iml" filepath="$PROJECT_DIR$/03SpringProperties/03SpringProperties.iml" />
       <module fileurl="file://$PROJECT_DIR$/04SpringAutoWired/04SpringAutoWired.iml" filepath="$PROJECT_DIR$/04SpringAutoWired/04SpringAutoWired.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05SpringSPEL/05SpringSPEL.iml" filepath="$PROJECT_DIR$/05SpringSPEL/05SpringSPEL.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
     </modules>
   </component>

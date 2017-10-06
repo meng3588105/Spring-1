@@ -10,6 +10,7 @@
       <module>02SpringCreateObject</module>
       <module>03SpringProperties</module>
       <module>04SpringAutoWired</module>
+      <module>05SpringSPEL</module>
   </modules>
   <packaging>pom</packaging>
 
