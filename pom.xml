@@ -12,6 +12,7 @@
       <module>04SpringAutoWired</module>
       <module>05SpringSPEL</module>
       <module>06SpringConfiguration</module>
+    <module>07SpringJdbc</module>
   </modules>
   <packaging>pom</packaging>
 
