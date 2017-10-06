@@ -16,6 +16,12 @@ public class Student {
 
     }
 
+    public Student(String sname, int age) {
+        this.age = age;
+        this.sname = sname;
+    }
+
+
     public int getSid() {
         return sid;
     }
