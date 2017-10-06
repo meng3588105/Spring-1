@@ -11,6 +11,7 @@
       <module>03SpringProperties</module>
       <module>04SpringAutoWired</module>
       <module>05SpringSPEL</module>
+      <module>06SpringConfiguration</module>
   </modules>
   <packaging>pom</packaging>
 
