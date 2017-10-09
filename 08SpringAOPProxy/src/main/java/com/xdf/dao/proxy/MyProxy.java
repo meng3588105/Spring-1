@@ -26,7 +26,8 @@ public class MyProxy  implements InvocationHandler{
      */
     public  Object createProxy(Object target){
         this.target=target;  //你传递的是Cat  那么我们关联对象就是Cat
-       return Proxy.newProxyInstance(target.getClass().getClassLoader(),target.getClass().getInterfaces(),this);
+       return Proxy.newProxyInstance(target.getClass().getClassLoader(),
+               target.getClass().getInterfaces(),this);
     }
 
 

@@ -57,4 +57,39 @@
                   它让我们传递父接口 我们传递 自身！
 
      02.cglib动态代理（接口+父类）
+         必须知道一个类和一个接口
+           001.MethodInterceptor接口
+
+           public Object intercept(Object obj,
+              Method method,Object[] args,MethodProxy proxy) throws Throwable;
+
+        intercept是所有拦截器执行的方法，类似于jdk动态代理中的invoke
+
+
+          002. Enhancer类
+
+           设置委托类和代理类的公共接口或者公共的父类
+           public void setSuperclass(Class superclass) {
+                  if (superclass != null && superclass.isInterface()) {
+                      setInterfaces(new Class[]{ superclass });
+                  } else if (superclass != null && superclass.equals(Object.class)) {
+                      // affects choice of ClassLoader
+                      this.superclass = null;
+                  } else {
+                      this.superclass = superclass;
+                  }
+              }
+
+               代理类执行完毕 通知委托类
+               public void setCallback(final Callback callback) {
+                      setCallbacks(new Callback[]{ callback });
+                  }
+
+
+                在Enhancer类的父类AbstractClassGenerator中有一个方法
+                  创建我们需要的代理类
+                  protected Object create(Object key)
+
+
+
 
