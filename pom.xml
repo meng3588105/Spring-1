@@ -13,6 +13,7 @@
       <module>05SpringSPEL</module>
       <module>06SpringConfiguration</module>
     <module>07SpringJdbc</module>
+      <module>08SpringAOPProxy</module>
   </modules>
   <packaging>pom</packaging>
 
