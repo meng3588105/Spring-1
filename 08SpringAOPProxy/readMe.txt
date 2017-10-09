@@ -1,6 +1,5 @@
  代理设计模式： 是java中常用的设计模式！
 
-
    例子：
        小明找 小黑  给  小红送一朵玫瑰花！
 
@@ -37,7 +36,25 @@
 
    按照我们的使用方式：  是由共同的接口还是公共的父类？
 
-     jdk动态代理 （接口）    cglib动态代理（接口+父类）
+     01.jdk动态代理 （接口）
+          必须知道一个类和一个接口
+           001.InvocationHandler接口只有一个方法
 
+            public Object invoke(Object proxy, Method method, Object[] args)
+                   throws Throwable;
 
+           proxy：代理类对象
+           method：被代理的方法
+           args：被代理的方法的参数列表
+
+          002.Proxy 类：
+           public static Object newProxyInstance(ClassLoader loader,
+                  Class<?>[] interfaces,InvocationHandler h)throws IllegalArgumentException
+              loader:类加载器
+              interfaces：代理类实现的所有接口
+              h：InvocationHandler接口的一个实例   this当前对象
+                 因为我们想使用jdk动态代理 必须是 代理类 实现 InvocationHandler！
+                  它让我们传递父接口 我们传递 自身！
+
+     02.cglib动态代理（接口+父类）
 
