@@ -13,6 +13,10 @@
 
     <!--02.配置前置通知-->
     <bean id="before" class="com.xdf.service.advices.BeforeAdvice"/>
+    <!--配置后置通知-->
+    <bean id="after" class="com.xdf.service.advices.AfterAdvice"/>
+
+
 
 
     <!--03.通过配置代理工厂bean，生成代理类，来把通知织入到目标对象-->
@@ -20,10 +24,11 @@
         <!--注册目标对象-->
         <property name="targetName" value="userService"/>
         <!--注册通知-->
-        <!-- <property name="interceptorNames" value="before,other">-->
+        <!-- <property name="interceptorNames" value="before,after">-->
         <property name="interceptorNames">
             <array>
-                 <value>before</value>
+                 <value>before</value> <!--前置通知-->
+                 <value>after</value> <!--后置通知-->
             </array>
         </property>
     </bean>

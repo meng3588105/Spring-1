@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class UserTest {
 
 
-    //前置通知测试
+    //前置  后置 通知测试
     @Test
     public    void   testBefore(){
         ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
