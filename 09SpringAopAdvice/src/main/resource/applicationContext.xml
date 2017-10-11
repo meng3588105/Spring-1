@@ -57,7 +57,12 @@
         </property>
         <!--代理类的优化  是否使用cglib动态代理-->
         <property name="optimize" value="true"/>
-       <!-- <property name="proxyTargetClass" value="true"/>-->
+       <!-- <property name="proxyTargetClass" value="true"/>
+       proxyTargetClass：默认是false  ，默认执行jdk动态代理！
+                         设置成true，强制执行cglib！
+       optimize ：  代理类的优化
+                  有接口就是用jdk，没有接口使用cglib动态代理
+       -->
     </bean>
 
 
