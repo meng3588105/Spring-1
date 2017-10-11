@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/06SpringConfiguration/06SpringConfiguration.iml" filepath="$PROJECT_DIR$/06SpringConfiguration/06SpringConfiguration.iml" />
       <module fileurl="file://$PROJECT_DIR$/07SpringJdbc/07SpringJdbc.iml" filepath="$PROJECT_DIR$/07SpringJdbc/07SpringJdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/08SpringAOPProxy/08SpringAOPProxy.iml" filepath="$PROJECT_DIR$/08SpringAOPProxy/08SpringAOPProxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09SpringAop/09SpringAop.iml" filepath="$PROJECT_DIR$/09SpringAop/09SpringAop.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
     </modules>
   </component>

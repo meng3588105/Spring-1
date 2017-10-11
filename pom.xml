@@ -14,6 +14,7 @@
       <module>06SpringConfiguration</module>
     <module>07SpringJdbc</module>
       <module>08SpringAOPProxy</module>
+      <module>09SpringAop</module>
   </modules>
   <packaging>pom</packaging>
 
