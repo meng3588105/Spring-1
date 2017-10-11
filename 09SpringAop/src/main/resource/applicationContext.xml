@@ -19,18 +19,40 @@
     <bean id="around" class="com.xdf.service.advices.AroundAdvice"/>
 
 
+    <!--配置异常目标对象-->
+    <bean id="userException" class="com.xdf.service.exceptionPackage.UserServiceImpl"/>
+    <!--配置异常通知-->
+    <bean id="myException" class="com.xdf.service.advices.ExceptionAdvice"/>
 
-    <!--03.通过配置代理工厂bean，生成代理类，来把通知织入到目标对象-->
+
+
+    <!--03.通过配置代理工厂bean，生成代理类，来把通知织入到目标对象
+       问题：只能管理  通知！
+          01.只能将切面织入到目标类的所有方法中！
+          02.只能配置一个 目标对象
+    -->
     <bean id="userProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
-        <!--注册目标对象-->
+        <!--注册目标对象 -->
         <property name="targetName" value="userService"/>
         <!--注册通知-->
         <!-- <property name="interceptorNames" value="before,after">-->
         <property name="interceptorNames">
             <array>
-                 <value>before</value> <!--前置通知-->
-                 <value>after</value> <!--后置通知-->
-                 <value>around</value> <!--环绕通知-->
+              <value>before</value>  <!--  前置通知-->
+                <value>after</value>  <!--  后置通知-->
+                <value>around</value>  <!--  环绕通知-->
+            </array>
+        </property>
+    </bean>
+
+    <!--现在是一个service对应一个ProxyFactoryBean  这样不可以！-->
+    <bean id="exceptionProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!--注册目标对象 -->
+        <property name="targetName" value="userException"/>
+        <!--注册通知-->
+        <property name="interceptorNames">
+            <array>
+                <value>myException</value> <!--异常通知-->
             </array>
         </property>
     </bean>
