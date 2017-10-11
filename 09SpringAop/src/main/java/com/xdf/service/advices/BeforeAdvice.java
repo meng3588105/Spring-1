@@ -14,8 +14,8 @@ public class BeforeAdvice implements MethodBeforeAdvice {
          * @throws Throwable
          */
     public void before(Method method, Object[] args, Object target) throws Throwable {
-        System.out.println("target的名称====》"+target);
-        System.out.println("method的名称====》"+method.getName());
+     /*   System.out.println("target的名称====》"+target);
+        System.out.println("method的名称====》"+method.getName());*/
         System.out.println("执行**** 前置**** 通知");
     }
 }

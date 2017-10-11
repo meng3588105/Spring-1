@@ -15,9 +15,9 @@ public class AfterAdvice implements AfterReturningAdvice {
      * @throws Throwable
      */
     public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
-        System.out.println("target的名称====》"+target);
+     /*   System.out.println("target的名称====》"+target);
         System.out.println("returnValue====》"+returnValue);
-        System.out.println("method的名称====》"+method.getName());
+        System.out.println("method的名称====》"+method.getName());*/
         System.out.println("执行**** 后置**** 通知");
     }
 }

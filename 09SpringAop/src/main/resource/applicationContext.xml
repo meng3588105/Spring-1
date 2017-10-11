@@ -15,7 +15,8 @@
     <bean id="before" class="com.xdf.service.advices.BeforeAdvice"/>
     <!--配置后置通知-->
     <bean id="after" class="com.xdf.service.advices.AfterAdvice"/>
-
+    <!--配置环绕通知-->
+    <bean id="around" class="com.xdf.service.advices.AroundAdvice"/>
 
 
 
@@ -29,6 +30,7 @@
             <array>
                  <value>before</value> <!--前置通知-->
                  <value>after</value> <!--后置通知-->
+                 <value>around</value> <!--环绕通知-->
             </array>
         </property>
     </bean>

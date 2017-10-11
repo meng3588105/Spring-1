@@ -16,6 +16,15 @@ public class UserTest {
         service.eat();
         System.out.println("*************");
         service.sleep();
-
+    }
+    //环绕 通知测试
+    @Test
+    public    void   testAround(){
+        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserService service= (UserService) context.getBean("userProxy");
+        String result= service.eat();
+        System.out.println(result);
+        System.out.println("*************");
+        service.sleep();
     }
 }
