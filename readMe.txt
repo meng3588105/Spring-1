@@ -47,7 +47,7 @@ Spring （容器）    概述：
                UserService   user=New UserServiceImpl();
                user就是目标对象！
            06.通知（Advice）：是切面的一种实现方式，定义了织入的时间！
-           07.顾问(Advisor)：是切面的一种实现方式，定义了织入的位置！
+           07.顾问(Advisor)：是切面的一种实现方式，定义了织入的时间，织入的位置！
                     通知是顾问的一个属性！顾问包含通知！
 
 
