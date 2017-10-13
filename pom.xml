@@ -16,6 +16,7 @@
       <module>08SpringAOPProxy</module>
       <module>09SpringAop</module>
       <module>10SpringAopAdvisor</module>
+      <module>11SpringAopAutoProxy</module>
   </modules>
   <packaging>pom</packaging>
 
