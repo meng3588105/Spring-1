@@ -22,12 +22,24 @@ public class UserDemo {
             System.out.println("*************");
             service2.sleep();
         }
+
         //bean后处理器的测试
         @Test
         public    void   testBeanPost(){
             ApplicationContext context=new ClassPathXmlApplicationContext("beanPostProcessor.xml");
             Dog dog= (Dog) context.getBean("dog");
 
+        }
+        //beanName自动代理生成器
+        @Test
+        public    void   testBeanNameAuto(){
+            ApplicationContext context=new ClassPathXmlApplicationContext("beanName.xml");
+            UserService service= (UserService) context.getBean("userService");
+            service.eat();
+            service.sleep();
+            System.out.println("***********************************");
+            Dog dog= (Dog) context.getBean("dog");
+            dog.haha();
         }
     }
 

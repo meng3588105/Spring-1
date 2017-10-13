@@ -15,7 +15,7 @@
 Bean后处理器！BeanPostProcessor
 任何一个bean只要是实现了BeanPostProcessor接口或者实现类，就必须实现接口中的两个方法！
 
-   //在beanClass的初始化对象之前执行的方法   beanId就是在容器中beanClass对应的id
+    //在beanClass的初始化对象之前执行的方法   beanId就是在容器中beanClass对应的id
        Object postProcessBeforeInitialization(Object beanClass, String beanId) throws BeansException;
     //在beanClass的初始化对象之后执行的方法   beanId就是在容器中beanClass对应的id
        Object postProcessAfterInitialization(Object beanClass, String beanId) throws BeansException;

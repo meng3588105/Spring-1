@@ -30,4 +30,9 @@ public class Dog  implements InitializingBean {
     public void afterPropertiesSet() throws Exception {
         System.out.println("执行了============》 afterPropertiesSet");
     }
+
+    public  void  haha(){
+        System.out.println("dog在Haha");
+    }
+
 }
