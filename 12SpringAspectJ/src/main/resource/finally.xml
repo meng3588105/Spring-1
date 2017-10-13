@@ -27,7 +27,6 @@
                   <aop:after-throwing method="afterThrowingTwo(java.lang.Exception)"  throwing="ex" pointcut-ref="exeEat"/>
                   <aop:after method="after" pointcut-ref="exeEat"/>
            </aop:aspect>
-
        </aop:config>
 
 </beans>
