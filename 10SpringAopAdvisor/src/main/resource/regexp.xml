@@ -8,11 +8,11 @@
         http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context.xsd">
 
-         <!--01.配置目标对象-->
+       <!--01.配置目标对象-->
      <bean  id="userService" class="com.xdf.service.impl.UserServiceImpl"/>
 
       <!--02.配置通知 advice-->
-    <bean  id="before" class="com.xdf.service.advices.BeforeAdvice"/>
+     <bean  id="before" class="com.xdf.service.advices.BeforeAdvice"/>
 
      <!--配置顾问   实现了 在指定的主业务方法中 增强-->
     <bean id="myAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
@@ -35,4 +35,8 @@
          <property name="interceptorNames" value="myAdvisor"/>
     </bean>
 
+
+
+    <!--  遗留的问题：
+      如果有多个目标对象，我们需要设置多个ProxyFactoryBean-->
 </beans>
