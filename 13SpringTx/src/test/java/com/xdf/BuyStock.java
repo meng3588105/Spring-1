@@ -18,4 +18,7 @@ public class BuyStock {
        service.buyStock("张三",100,1);
 
     }
+
+
+
 }
