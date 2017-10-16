@@ -24,9 +24,6 @@
 
 
 
-
-
-
   三：Spring的事务管理
 
         注意点：
@@ -106,3 +103,55 @@
 
       受查异常需要我们手动的设置回滚方式！
       一旦发生运行时异常，jvm终止操作！
+
+
+
+   八：用户购买股票的案例
+
+     1.引入数据库需要的素材
+
+           USE `t13test`;
+
+           DROP TABLE IF EXISTS `account`;
+           CREATE TABLE `account` (
+             `aid` int(10) NOT NULL AUTO_INCREMENT,
+             `balance` double DEFAULT NULL,
+             `aname` varchar(20) DEFAULT NULL,
+             PRIMARY KEY (`aid`)
+           ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+           insert  into `account`(`aid`,`balance`,`aname`) values (1,10000,'张三');
+
+           DROP TABLE IF EXISTS `stock`;
+
+           CREATE TABLE `stock` (
+             `sid` int(10) NOT NULL AUTO_INCREMENT,
+             `sname` varchar(20) DEFAULT NULL,
+             `amount` int(10) DEFAULT NULL,
+             PRIMARY KEY (`sid`)
+           ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+           insert  into `stock`(`sid`,`sname`,`amount`) values (1,'张三',0);
+
+
+  2.创建对应的java项目
+     01.创建对应的包以及实体类
+        Account
+        Stock
+     02.引入需要的spring核心配置文件
+        在配置文件中的头部增加tx需要的模版
+         xmlns:tx="http://www.springframework.org/schema/tx"
+     03.创建dao层以及对应的代码
+     04.创建daoImpl层以及对应的代码
+         daoImpl层需要继承 JdbcDaoSupport
+     05.创建service层以及对应的impl类
+     06.在核心配置文件中 配置bean之间的关系
+
+
+
+
+
+
+
+
+
+
