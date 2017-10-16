@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/11SpringAopAutoProxy/11SpringAopAutoProxy.iml" filepath="$PROJECT_DIR$/11SpringAopAutoProxy/11SpringAopAutoProxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/10SpringAopAdvisor/11SpringAutoProxy.iml" filepath="$PROJECT_DIR$/10SpringAopAdvisor/11SpringAutoProxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/12SpringAspectJ/12SpringAspectJ.iml" filepath="$PROJECT_DIR$/12SpringAspectJ/12SpringAspectJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13SpringTx/13SpringTx.iml" filepath="$PROJECT_DIR$/13SpringTx/13SpringTx.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
     </modules>
   </component>
