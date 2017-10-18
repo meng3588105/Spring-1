@@ -10,6 +10,7 @@ public class BuyStock {
 
     /**
     没有使用事务的处理
+
      */
     @Test
     public  void testBuyNoTx(){
