@@ -30,4 +30,23 @@ public class ExceptionDemo {
         service.buyStock("张三",100,1);
 
     }
+
+    /**
+     * 注解实现事务
+     */
+    @Test
+    public  void testAnnotationException() throws com.xdf.annotation.impl.BuyStockException {
+        ApplicationContext context=new ClassPathXmlApplicationContext("annotation.xml");
+       com.xdf.annotation.BuyStockService service= (com.xdf.annotation.BuyStockService) context.getBean("buyStockService");
+        service.buyStock("张三",100,1);
+    }
+    /**
+     * aspectj实现事务
+     */
+    @Test
+    public  void testAspectjException() throws com.xdf.aspectj.impl.BuyStockException {
+        ApplicationContext context=new ClassPathXmlApplicationContext("aspectj.xml");
+       com.xdf.aspectj.BuyStockService service= (com.xdf.aspectj.BuyStockService) context.getBean("buyStockService");
+        service.buyStock("张三",100,1);
+    }
 }
