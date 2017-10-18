@@ -56,7 +56,7 @@
 
     <!--执行切入点-->
       <aop:config>
-          <aop:pointcut id="myPoint" expression="execution(* *..service.*.*(..))"/>
+          <aop:pointcut id="myPoint" expression="execution(* *..aspectj.*.*(..))"/>
           <aop:advisor advice-ref="myAdvice" pointcut-ref="myPoint"/>
       </aop:config>
 </beans>
