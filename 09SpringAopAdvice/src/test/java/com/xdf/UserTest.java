@@ -33,7 +33,7 @@ public class UserTest {
     @Test
     public    void   testException(){
         ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
-        ExceptionService service= (ExceptionService) context.getBean("userProxy");
+        ExceptionService service= (ExceptionService) context.getBean("exceptionProxy");
         try {
             service.checkUser("admin",25);
         } catch (UserException e) {
